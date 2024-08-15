@@ -37,13 +37,13 @@ body {
 
 .form .input-box {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .input-box label {
   color: #ffffff;
   position: relative;
-  top: 50px;
+  top: 5px;
   
 }
 .form :where(.input-box input, .select-box) {
