@@ -13,7 +13,7 @@ h1{
 
 
 form{
-    width:35rem;
+    width:500px;
     margin: auto;
     color:whitesmoke;
     backdrop-filter: blur(20px) saturate(100%);
@@ -31,9 +31,11 @@ input[type=text], input[type=password]{
     padding: 15px 18px;
     box-sizing: border-box;
   }
+
 .aa {
     text-align: center;
 }
+
 button {
     background-color: #0f7964;
     color: white;
@@ -101,7 +103,6 @@ span.forgotpsd a {
     text-decoration: none;
   }
 
-  /* Media queries for the responsiveness of the page */
   @media screen and (max-width: 600px) {
     form{
       width: 25rem;
@@ -112,4 +113,9 @@ span.forgotpsd a {
     form{
       width: 20rem;
     }
+  }
+
+  h1,label{
+    font-family: "Lucida Console", Courier, monospace;
+    margin-top: 50px;
   }
