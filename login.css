@@ -6,11 +6,9 @@ body
   color:rgb(34, 34, 34);
 }
 
-
 h1{
     text-align: center;
 }
-
 
 form{
     width:500px;
@@ -30,7 +28,7 @@ input[type=text], input[type=password]{
     box-sizing: border-box;
   }
 
-.aa {
+.btn {
     text-align: center;
 }
 
@@ -42,7 +40,7 @@ button {
     margin: 7px 0;
     width: 33%;
     font-size: 18px;
-  } 
+} 
 
 button:hover {
     background-color: #0f3d38;
