@@ -46,13 +46,14 @@ body {
     cursor: pointer;
     color: hsl(0, 0%, 100%);
   }
+  .header h1{
+    color: white;
+  }
   h1{
     color:#0b6a57;
     text-shadow: 1px 1px;
   }
-  .header h1{
-    color: white;
-  }
+  
   .polaroid {
     text-align: center;
     width: 80%;
