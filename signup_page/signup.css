@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body {
+    font-family:"Poppins", sans-serif; 
+    background:rgb(227, 249, 249); 
+    color:rgb(34, 34, 34);
+    
+}
+* {
+    box-sizing: border-box
+}
+.headingsContainer{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+form{
+    width:500px;
+    margin: auto;
+    color:whitesmoke;
+    background-color: rgba(51, 108, 109, 0.582);
+    border-radius: 15px;
+    padding: 20px 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.btn {
+    text-align: center;
+}
+
+button {
+    background-color: #0f7964;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    margin: 7px 0;
+    width: 40%;
+    font-size: 18px;
+} 
+
+button:hover {
+    background-color: #0f3d38;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.container {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1,label{
+    font-family: "Lucida Console", Courier, monospace;
+    margin-top: 50px;
+  } 
+  
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
