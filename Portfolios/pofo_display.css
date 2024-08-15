@@ -1,11 +1,10 @@
 body {
-    position:relative;
-    
-    font-family:"Poppins", sans-serif; 
-    margin-top:50px;
+    margin:0;  
+    padding:0;
     text-align: center;
     background:rgb(227, 249, 249); 
 }
+
 .header{
     background-color: rgb(0, 0, 0);
     color: white;
@@ -99,7 +98,10 @@ body, html {
     bottom: 0px;
     left: 0px;
     right: 0px;
+    padding-bottom:0;
+    height:auto;
   }
+
   .footer h1{
     font-family:"Lucida Console", Courier, monospace;
     color: #0b6a57;
@@ -107,12 +109,13 @@ body, html {
     text-shadow: none;
     margin-left:30px;
   }
+
   .box1{
-    margin-top:10px;
     display: inline-block;
     width: 35%;
     text-align: left;
     margin-left: 10px;
+    position: relative;
   }
   
   .box3{
@@ -126,4 +129,10 @@ body, html {
     width: 35%;
     text-align: left;
     margin-left: 100px;
+  }
+
+  .box1,.box2,.box3{
+    border-color: rgb(255, 255, 255);
+    border-width: 3px;
+    
   }
