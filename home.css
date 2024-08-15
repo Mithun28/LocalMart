@@ -172,3 +172,18 @@ a:visited{
   border: 2px solid #f5ffcf;
   color: black; 
 }
+
+.fa {
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 5px 2px;
+  border-radius: 50%;
+  background-color: #002c33;
+  color: aliceblue;
+}
+
+.fa:hover{
+  opacity:0.7;
+}
