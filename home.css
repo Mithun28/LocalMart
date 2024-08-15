@@ -134,3 +134,12 @@ img{
   color: black; 
   border: 2px solid #f5ffcf;
 }
+
+a{
+  color: aliceblue;
+  text-decoration: none ;
+}
+
+a:visited{
+  color: aliceblue;
+}
