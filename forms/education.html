@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://use.fontawesome.com/fe459689b4.js"></script>
+    <link rel="stylesheet" href="personal.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Enter your Education Details</h1>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Institution Name</label>
+          <input type="text" placeholder="Enter name" required />
+        </div>     
+
+        <div class="input-box">
+          <label>Address </label>
+          <input type="text" placeholder="Enter Address" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>CGPA</label>
+            <input type="number" placeholder="Enter CGPA" required />
+          </div>
+          
+          <div class="input-box">
+            <label>Graduation Year</label>
+            <input type="date" placeholder="Enter graduation year" required />
+          </div>
+        </div>
+
+        <div class="gender-box">
+          <h3>Ongoing</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Yes</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">No</label>
+            </div>
+           </div>
+        </div>
+
+        <div class="about">
+            <label>Relevant Courses and Certificates</label>
+            <div class="about-para">
+                <textarea id="subject" name="subject" placeholder="Write about your relevant courses and certificates" style="height:200px"></textarea>
+            </div>
+        </div>
+        <button>Go to Experience</button>
+      </form>
+    </section>
+  </body>
+</html>
