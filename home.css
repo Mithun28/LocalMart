@@ -1,7 +1,6 @@
 body, html { margin:0;
   padding:0;
-  background-color: rgb(227, 249, 249);
-  
+  background-color: rgb(227, 249, 249);  
 }
 
 .header{
@@ -62,7 +61,8 @@ li:hover{
 }
 
 input{
-  width: 500px;
+  padding: 15px;
+  width: 400px;
   height: 30px;
   border-radius: 20px;
   font-family: "Lucida Console", Courier, monospace;
