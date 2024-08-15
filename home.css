@@ -17,6 +17,7 @@ ul{
   font-weight: bold;
   font-size: large;
 }
+
 nav h1{
   font-family:'Times New Roman', Times, serif;
   display:inline;
@@ -24,26 +25,31 @@ nav h1{
   font-size: 30px;
   text-shadow: none;
 }
+
 a.link{
   color:white;
   text-decoration: none;
 }
+
 a.link:hover{
   color:#07a283;
 }
+
 nav ul li:hover{
   color:#07a283;
 }
+
 li{
   display: inline;
   padding-right: 20px;
   color: rgb(255, 255, 255);
 }
 
-li:hover, .box1, .box2, .box3{
+li:hover{
   cursor: pointer;
   color: hsl(0, 0%, 100%);
 }
+
 .header h1{
   color: white;
 }
@@ -87,6 +93,11 @@ img{
   bottom: 0;
 }
 
+.footer h2{
+  color:#0b6a57;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
 .search p{
   text-align: center;
   color: rgb(27, 0, 27);
@@ -95,24 +106,39 @@ img{
   
 }
 
-.box1{
-  display: inline-block;
-  width: 35%;
-  text-align: left;
-  margin-left: 10px;
+a{
+  color: aliceblue;
+  text-decoration: none ;
 }
 
-.box3{
-  display: inline-block;
+a:visited{
+  color: aliceblue;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column1 {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 170px; 
+  margin-left: 30px;
+}
+
+.column2 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 170px; 
+  margin-left: 30px;
+}
+
+.column3 {
+  float: left;
   width: 20%;
-  text-align: left;
-}
-
-.box2{
-  display: inline-block;
-  width: 35%;
-  text-align: left;
-  margin-left: 100px;
+  padding: 10px;
+  height: 170px; 
 }
 
 .icons{
@@ -126,7 +152,7 @@ img{
 .make{
   text-align: center;
   position: relative;
-  top: 65px;
+  top: 70px;
   font-family: "Lucida Console", Courier, monospace;
 
 }
@@ -143,15 +169,6 @@ img{
 
 .button:hover {
   background-color: #f5ffcf; 
-  color: black; 
   border: 2px solid #f5ffcf;
-}
-
-a{
-  color: aliceblue;
-  text-decoration: none ;
-}
-
-a:visited{
-  color: aliceblue;
+  color: black; 
 }
