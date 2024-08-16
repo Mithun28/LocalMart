@@ -22,7 +22,7 @@ function consoleText(word, id, color) {
                 setTimeout(function() {
                     letterCount = 1;
                     waiting = false;
-                }, 1000);
+                }, 100);
             }
         }
     }
@@ -31,8 +31,8 @@ function consoleText(word, id, color) {
         con.classList.toggle('hidden');
     }
 
-    setInterval(typeEffect, 120);
-    setInterval(blinkCursor, 400);
+    setInterval(typeEffect, 80);
+    setInterval(blinkCursor, 150);
 }
 
-consoleText('Show Off your Portfolio too!', 'text', 'black');
+consoleText('Expand your business!', 'text', 'black');
