@@ -22,7 +22,7 @@ function consoleText(word, id, color) {
                 setTimeout(function() {
                     letterCount = 1;
                     waiting = false;
-                }, 100);
+                }, 1000);
             }
         }
     }
