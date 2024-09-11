@@ -44,11 +44,69 @@ body {
 .input-box input:focus {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
+.profile-picture {
+  opacity: 0.75;
+  height: 170px;
+  width: 150px;
+  position: relative;
+  top: 4px;
+  left:4px;
+  overflow: hidden;
+  background: url('https://qph.cf2.quoracdn.net/main-qimg-f32f85d21d59a5540948c3bfbce52e68');
 
-.form :where(.input-box input, .select-box) {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.file-uploader {
+  /* make it invisible */
+  opacity: 0;
+  /* make it take the full height and width of the parent container */
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  /* make it absolute */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.upload-icon {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* initial icon state */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #ccc;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #bbb;
+}
+
+.profile-picture:hover .upload-icon {
+  opacity: 1;
+}
+
+.products {
     position: relative;
     height: 50px;
-    width: 50%;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+  }
+
+  .sales {
+    position: relative;
+    height: 50px;
+    width: 100%;
     outline: none;
     font-size: 1rem;
     color: #707070;
@@ -63,7 +121,7 @@ body {
   }
 
   
-.addskills{
+.addproduct{
     height: 55px;
     width: 40%;
     color: #fff;

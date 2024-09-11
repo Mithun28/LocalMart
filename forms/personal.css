@@ -119,37 +119,37 @@ body {
   opacity: 1;
 }
   
-.form .gender-box {
+.form .sponsor-box {
   margin-top: 20px;
 }
 
-.gender-box h3 {
+.sponsor-box h3 {
   color: #ffffff;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 8px;
 }
 
-.form :where(.gender-option, .gender) {
+.form :where(.sponsor-option, .sponsor) {
   display: flex;
   align-items: center;
   column-gap: 50px;
   flex-wrap: wrap;
 }
 
-.form .gender {
+.form .sponsor {
   column-gap: 5px;
 }
 
-.gender input {
+.sponsor input {
   accent-color: rgb(0, 161, 182);
 }
 
-.form :where(.gender input, .gender label) {
+.form :where(.sponsor input, .sponsor label) {
   cursor: pointer;
 }
 
-.gender label {
+.sponsor label {
   color: #ffffff;
 }
 
@@ -217,7 +217,7 @@ a:link{
   .form .column {
     flex-wrap: wrap;
   }
-  .form :where(.gender-option, .gender) {
+  .form :where(.sponsor-option, .sponsor) {
     row-gap: 15px;
   }
 }
