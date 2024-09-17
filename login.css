@@ -2,28 +2,26 @@
 body 
 {
   font-family:"Poppins", sans-serif; 
-  background:rgb(227, 249, 249); 
+  background: #0f7964;
   color:rgb(34, 34, 34);
 }
 
-h1{
-    text-align: center;
-}
-
 form{
+  margin-top: 100px;
     width:500px;
     margin: auto;
-    color:whitesmoke;
-    background-color: rgba(51, 108, 109, 0.582);
-    border-radius: 15px;
+    color:#0f7964;
+    background-color: rgb(227, 249, 249);
+    border-radius: 1px;
     padding: 20px 25px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
 }
+
 
 input[type=text], input[type=password]{
     width: 100%;
     margin: 1px 0;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 15px 18px;
     box-sizing: border-box;
   }
@@ -87,7 +85,7 @@ span.forgotpsd a {
   }
 
   .register{
-    color: white;
+    color: #0f7964;
     text-align: center;
   }
   
@@ -111,7 +109,7 @@ span.forgotpsd a {
     }
   }
 
-  h1,label{
+  label{
     font-family: "Lucida Console", Courier, monospace;
     margin-top: 50px;
-  }
+  } 
