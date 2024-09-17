@@ -35,4 +35,4 @@ function consoleText(word, id, color) {
     setInterval(blinkCursor, 150);
 }
 
-consoleText('Expand your business!', 'text', 'black');
+consoleText('Expand your business here on LocalMart!', 'text', 'black');
