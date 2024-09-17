@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 body {
     font-family:"Poppins", sans-serif; 
-    background:rgb(227, 249, 249); 
+    background: #0f7964; 
     color:rgb(34, 34, 34);
     
 }
@@ -10,6 +10,8 @@ body {
 }
 .headingsContainer{
     text-align: center;
+    font-weight: bold;
+    font-size: large;
 }
 h1{
     text-align: center;
@@ -19,25 +21,25 @@ input[type=text], input[type=password] {
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
-  border: none;
-  background: #f1f1f1;
+  border-radius: 5px;
+  background: #ffffff;
 }
 form{
     width:500px;
     margin: auto;
-    color:whitesmoke;
-    background-color: rgba(51, 108, 109, 0.582);
-    border-radius: 15px;
+    color:#0f7964;
+    background-color: rgb(227, 249, 249);
+    border-radius: 1px;
     padding: 20px 25px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
 }
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
+  background-color: #ffffff;
   outline: none;
 }
 
 hr {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #ffffff;
   margin-bottom: 25px;
 }
 
@@ -80,4 +82,8 @@ h1,label{
   .cancelbtn, .signupbtn {
     width: 100%;
   }
+}
+
+.mainContainer{
+  padding: 12px;
 }
