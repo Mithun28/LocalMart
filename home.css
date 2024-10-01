@@ -1,6 +1,20 @@
 body, html { margin:0;
   padding:0;
-  background-color: rgb(227, 249, 249);  
+  background: linear-gradient(-45deg, #bcbcbb, #8c8b8b, #9fdba1, #ffffff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite; 
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .header{
@@ -267,3 +281,4 @@ a .button2 {
 #text{
   display: inline-block;
 }
+
