@@ -12,21 +12,22 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: rgb(227, 249, 249);;
+  background: #0f7964; 
+  color:rgb(34, 34, 34);
 }
 
 .container {
   position: relative;
   max-width: 800px;
   width: 100%;
-  background-color: rgba(51, 108, 109, 0.582);
+  color:#0f7964;
+  background-color: rgb(227, 249, 249);
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .container h1 {
-  color: #ffffff;
   font-weight: bolder;
   text-align: center;
 }
@@ -41,7 +42,6 @@ body {
 }
 
 .input-box label {
-  color: #ffffff;
   position: relative;
   top: 10px;
   
@@ -69,7 +69,6 @@ body {
 }
 
 .image p{
-  color: #ffffff;
   position: relative;
   top: 10px;
 }
@@ -124,7 +123,6 @@ body {
 }
 
 .sponsor-box h3 {
-  color: #ffffff;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 8px;
@@ -147,10 +145,6 @@ body {
 
 .form :where(.sponsor input, .sponsor label) {
   cursor: pointer;
-}
-
-.sponsor label {
-  color: #ffffff;
 }
 
 .address :where(input, .select-box) {
@@ -180,12 +174,13 @@ body {
 }
 
 .about label {
-    color: #ffffff;
     position: relative;
     top: 10px;
     
   }
-
+label::after{
+  top:5px;
+}
 .form button {
   height: 55px;
   width: 100%;
