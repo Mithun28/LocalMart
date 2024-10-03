@@ -19,7 +19,7 @@
     // Check if arrays are present
     if (is_array($productNames)) {
         // Loop through the products
-        for ($i = 0; $i < count($productNames); $i++) {
+        for ($i = 0; $i < count($productNames) ; $i++) {
             // Initialize an empty path for each product picture
             $picturePath = '';
 
