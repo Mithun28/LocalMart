@@ -14,25 +14,28 @@
     $logoPath = '';
 
     if (isset($_FILES['business_logo'])) {
-        $logoFile = $_FILES['business_logo'];
-        $logoName = $logoFile['name'];
-        $logoTmpName = $logoFile['tmp_name'];
+        $logoName = $_FILES['business_logo']['name'];
+        $logoTmpName = $_FILES['business_logo']['tmp_name'];
         $uploadDirectory = "uploads/";
-        $logoPath = $uploadDirectory . $logoName;
+        $logoPath = $uploadDirectory.$logoName;
 
         if (move_uploaded_file($logoTmpName, $logoPath)) {
             echo "Business logo uploaded successfully.";
+            $host = "localhost";
+            $user = "root";
+            $pwd = "";
+            $db = "LocalMart";
+            $connect = mysqli_connect($host,$user,$pwd,$db);
+            $query = "INSERT INTO business_details
+                    VALUES('$businessName', '$founderName', '$logoPath', '$email', '$phoneNumber', '$launchDate', '$sponsor', '$location', '$address', '$facebookLink', '$instagramLink', '$xLink', '$about')";
+            $result = mysqli_query($connect,$query);
         } else {
             echo "Error uploading logo.";
         }
-    }    
+    }   
+    else{
+        echo "issue";
+    } 
 
-    $host = "localhost";
-    $user = "root";
-    $pwd = "";
-    $db = "LocalMart";
-    $connect = mysqli_connect($host,$user,$pwd,$db);
-    $query = "INSERT INTO business_details
-            VALUES('$businessName', '$founderName', '$logoPath', '$email', '$phoneNumber', '$launchDate', '$sponsor', '$location', '$address', '$facebookLink', '$instagramLink', '$xLink', '$about')";
-    $result = mysqli_query($connect,$query);
+
 ?>
