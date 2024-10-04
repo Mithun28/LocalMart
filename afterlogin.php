@@ -13,7 +13,7 @@
         <nav>
             <h1> LocalMart</h1>
             <ul>
-                <li><a href="home.html" class="link"> Home</a> </li>
+                <li><a href="afterlogin.php" class="link"> Home</a> </li>
                 <li>About </li>
                 <li>Contact Us </li>
                 <li><img src="pictures/profile_icon.jpg" style="height:20px; width:20px; vertical-align:centre; border-radius:50%;"></li>
