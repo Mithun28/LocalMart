@@ -64,7 +64,7 @@ button:hover {
 }
 
 .container {
-  padding: 16px;
+  padding: 2px;
 }
 
 .clearfix::after {
@@ -75,7 +75,7 @@ button:hover {
 
 h1,label{
     font-family: "Lucida Console", Courier, monospace;
-    margin-top: 50px;
+    margin-top: 25px;
   } 
   
 @media screen and (max-width: 300px) {
@@ -85,5 +85,5 @@ h1,label{
 }
 
 .mainContainer{
-  padding: 12px;
+  padding: 2px;
 }
