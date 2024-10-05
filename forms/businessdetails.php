@@ -1,4 +1,7 @@
 <?php
+    include('personal.html');
+    session_start();
+    $uname=$_SESSION['USR'];
     $businessName = $_POST['business_name'];
     $founderName = $_POST['founder_name'];
     $email = $_POST['email'];
@@ -20,21 +23,24 @@
         $logoPath = $uploadDirectory.$logoName;
 
         if (move_uploaded_file($logoTmpName, $logoPath)) {
-            echo "Business logo uploaded successfully.";
             $host = "localhost";
             $user = "root";
             $pwd = "";
             $db = "LocalMart";
             $connect = mysqli_connect($host,$user,$pwd,$db);
-            $query = "INSERT INTO business_details
-                    VALUES('$businessName', '$founderName', '$logoPath', '$email', '$phoneNumber', '$launchDate', '$sponsor', '$location', '$address', '$facebookLink', '$instagramLink', '$xLink', '$about')";
+            $query = "INSERT INTO company_details
+                    VALUES('$uname','$businessName', '$founderName', '$logoPath', '$email', '$phoneNumber', '$launchDate', '$sponsor', '$location', '$address', '$facebookLink', '$instagramLink', '$xLink', '$about')";
             $result = mysqli_query($connect,$query);
+            session_start();
+            $_SESSION['USR']=$uname;
+            header("location:products.html");
+            exit;
         } else {
-            echo "Error uploading logo.";
+            echo "<p>Error uploading logo.</p>";
         }
     }   
     else{
-        echo "issue";
+        echo "<p>issue</p>";
     } 
 
 

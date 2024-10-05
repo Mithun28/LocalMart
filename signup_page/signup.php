@@ -11,13 +11,13 @@
     $db = "LocalMart";
     $connect = mysqli_connect($host,$user,$pwd,$db);
 
-    $query1 = "SELECT * FROM Users WHERE USERNAME LIKE '$uname'";
+    $query1 = "SELECT * FROM Companies WHERE USERNAME LIKE '$uname'";
     $result1 = mysqli_query($connect,$query1);
 
     if(mysqli_num_rows($result1) == 0){
         if($psw == $psw_repeat)
         {
-            $query = "INSERT INTO Users VALUES('$email','$uname','$psw')";
+            $query = "INSERT INTO Companies VALUES('$email','$uname','$psw')";
             $result = mysqli_query($connect,$query);
             header("location:../login.html");
             exit;

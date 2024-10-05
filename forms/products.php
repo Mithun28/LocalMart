@@ -1,10 +1,13 @@
 <?php
-    // Connect to the database
+    include('products.html');
+    session_start();
+    $uname=$_SESSION['USR'];
     $host = "localhost";
     $user = "root";
     $pwd = "";
     $db = "LocalMart";
     $connect = mysqli_connect($host, $user, $pwd, $db);
+
 
     if (!$connect) {
         die("Connection failed: " . mysqli_connect_error());
@@ -39,8 +42,8 @@
             }
 
             // Prepare SQL query to insert the product details into the database
-            $query = "INSERT INTO products (product_name, product_description, product_price, product_type, product_picture) 
-                      VALUES ('$productNames[$i]', '$productDescriptions[$i]', '$productPrices[$i]', '$productTypes[$i]', '$picturePath')";
+            $query = "INSERT INTO products (Username,Product_Name, Product_Description, Product_Price, Product_Type, Product_Picture) 
+                      VALUES ('$uname','$productNames[$i]', '$productDescriptions[$i]', '$productPrices[$i]', '$productTypes[$i]', '$picturePath')";
 
             // Execute the query
             if (mysqli_query($connect, $query)) {
