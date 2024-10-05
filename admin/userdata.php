@@ -28,55 +28,55 @@
         </nav>
     </div>
     <div class="table">
-    <table>
-        <tr>
-        <div class="th">
-            <th> USER NAME </th>
-            <th> EMAIL ID </th>
-            <th> COMPANY </th>
-            <th> NUMBER OF PRODUCTS </th>
-        </div>
-        </tr>
-        <?php
-            $sel=mysqli_query($connect,"SELECT * FROM companies;");
-            if(mysqli_num_rows($sel)>0)
-                {
-                    while($r=mysqli_fetch_row($sel))
+        <table>
+            <tr>
+            <div class="th">
+                <th> USER NAME </th>
+                <th> EMAIL ID </th>
+                <th> COMPANY </th>
+                <th> NUMBER OF PRODUCTS </th>
+            </div>
+            </tr>
+            <?php
+                $sel=mysqli_query($connect,"SELECT * FROM companies;");
+                if(mysqli_num_rows($sel)>0)
                     {
-                        if($r[1]!='admin')
-                        {?>
-                        <tr>
-                            <td><?php        echo $r[1]."<br>"; ?></td>
-                            <td><?php        echo $r[0]."<br>"; ?></td>
-                            <td><?php
-                                $query = "SELECT Business_Name FROM Company_Details WHERE Username = '$r[1]';" ;
-                                $result = mysqli_query($connect,$query);
-                                if(mysqli_num_rows($result) > 0)
-                                {
-                                    while($c = mysqli_fetch_row($result)){
-                                        echo $c[0]."<br>";
-                                    }
-                                }   
-                                else{
-                                    echo "-";
-                                }    
-                             ?></td>
-                            <td><?php        $query = "SELECT COUNT(*) FROM products WHERE Username = '$r[1]';" ;
-                                $result = mysqli_query($connect,$query);
-                                if(mysqli_num_rows($result) > 0)
-                                {
-                                    while($c = mysqli_fetch_row($result)){
-                                        echo $c[0]."<br>";
-                                    }
-                                }   
-                                else{
-                                    echo "-";
-                                } ?></td>
-                        </tr>
-                <?php
-            }}}
-            ?>
-    </table>
+                        while($r=mysqli_fetch_row($sel))
+                        {
+                            if($r[1]!='admin')
+                            {?>
+                            <tr>
+                                <td><?php        echo $r[1]."<br>"; ?></td>
+                                <td><?php        echo $r[0]."<br>"; ?></td>
+                                <td><?php
+                                    $query = "SELECT Business_Name FROM Company_Details WHERE Username = '$r[1]';" ;
+                                    $result = mysqli_query($connect,$query);
+                                    if(mysqli_num_rows($result) > 0)
+                                    {
+                                        while($c = mysqli_fetch_row($result)){
+                                            echo $c[0]."<br>";
+                                        }
+                                    }   
+                                    else{
+                                        echo "-";
+                                    }    
+                                ?></td>
+                                <td><?php        $query = "SELECT COUNT(*) FROM products WHERE Username = '$r[1]';" ;
+                                    $result = mysqli_query($connect,$query);
+                                    if(mysqli_num_rows($result) > 0)
+                                    {
+                                        while($c = mysqli_fetch_row($result)){
+                                            echo $c[0]."<br>";
+                                        }
+                                    }   
+                                    else{
+                                        echo "-";
+                                    } ?></td>
+                            </tr>
+                    <?php
+                }}}
+                ?>
+        </table>
     </div>
     <div class="footer">
             <div class="column1">
