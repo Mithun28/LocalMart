@@ -13,7 +13,13 @@
     $result1 = mysqli_query($connect,$query1);
 
     if(mysqli_num_rows($result1) > 0){
-        header("location:afterlogin.php");
-        exit;
+        if($uname == 'admin'){
+            header("location:admin/adminpage.html");
+            exit;
+        }
+        else{
+            header("location:afterlogin.php");
+            exit;
+        }
     }
 ?>
