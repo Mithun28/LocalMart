@@ -1,7 +1,7 @@
 <?php
-    include('products.html');
     session_start();
     $uname=$_SESSION['USR'];
+    include('products.html');
     $host = "localhost";
     $user = "root";
     $pwd = "";
