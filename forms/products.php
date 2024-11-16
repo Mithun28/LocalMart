@@ -48,5 +48,40 @@
         echo "No products found in the form.";
     }
 
-    mysqli_close($connect);
+    function copyFolder($src, $dst) {
+        // Check if source directory exists
+        if (!file_exists($src)) {
+            die("Source folder does not exist.");
+        }
+
+        // Create destination directory if it doesn't exist
+        if (!file_exists($dst)) {
+            mkdir($dst, 0777, true);
+        }
+
+        // Loop through the files and folders in the source directory
+        $dir = opendir($src);
+        while (($file = readdir($dir)) !== false) {
+            // Skip the special folders "." and ".."
+            if ($file != '.' && $file != '..') {
+                // Construct full paths for source and destination
+                $srcFile = $src . '/' . $file;
+                $dstFile = $dst . '/' . $file;
+
+                // If it's a directory, recurse into it
+                if (is_dir($srcFile)) {
+                    copyFolder($srcFile, $dstFile);
+                } else {
+                    // Otherwise, copy the file
+                    copy($srcFile, $dstFile);
+                }
+            }
+        }
+        closedir($dir);
+    }
+
+    // Usage
+    $sourceFolder = 'path/to/source/folder';
+    $destinationFolder = 'path/to/destination/folder';
+    copyFolder($sourceFolder, $destinationFolder);
 ?>
