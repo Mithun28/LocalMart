@@ -1621,12 +1621,6 @@ a.text-hover:focus:after {
   }  
 }
 
-img{
-  width: 200px;
-  height: 200px;
-}
-
-.navbar-brand img{
-  width: 50px;
-  height: 50px;
-}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
