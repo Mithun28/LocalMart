@@ -44,7 +44,7 @@
         </div>
         
         <a href="Portfolios/templates.html"><button class="button1">Make Your Own Website </button></a>
-        <a href="Portfolios/templates.html"><button class="button2">Check on your website </button></a>
+        <a href="Portfolios/user_web1/index.html"><button class="button2">Check on your website </button></a>
     </div>
     
     <div class="footer">
